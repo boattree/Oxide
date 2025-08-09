@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rust-3D Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div id="bars">
+      <div>Health: <span id="health">100</span></div>
+      <div>Hunger: <span id="hunger">100</span></div>
+      <div>Stamina: <span id="stamina">100</span></div>
+    </div>
+    <div id="hotbar"></div>
+  </div>
+
+  <!-- Modals -->
+  <div id="inventoryModal" class="modal hidden">
+    <h3>Inventory</h3>
+    <div id="inventoryList"></div>
+    <button id="closeInventory">Close</button>
+  </div>
+
+  <div id="craftingModal" class="modal hidden">
+    <h3>Crafting</h3>
+    <div id="recipes"></div>
+    <button id="closeCrafting">Close</button>
+  </div>
+
+  <div id="message" class="hidden"></div>
+
+  <script type="module" src="src/engine.js"></script>
+</body>
+</html>

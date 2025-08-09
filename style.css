@@ -1,0 +1,13 @@
+:root{ --panel:#112; --accent:#6fc3ff; color:#dfeffb; font-family:Inter,Arial,sans-serif; }
+body{ margin:0; overflow:hidden; }
+canvas{ display:block; width:100vw; height:100vh; background:linear-gradient(#74b9ff,#052034); }
+#hud{ position: absolute; left: 12px; top: 12px; z-index: 30; }
+#bars div{ background: rgba(0,0,0,0.35); padding:8px; margin-bottom:6px; border-radius:6px; }
+#hotbar{ position:absolute; bottom:12px; left:50%; transform:translateX(-50%); display:flex; gap:8px; }
+#hotbar .slot{ width:48px; height:48px; background:rgba(255,255,255,0.04); border-radius:6px; display:flex; align-items:center; justify-content:center; }
+.modal{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:var(--panel); padding:12px; border-radius:8px; z-index:60; width:360px; box-shadow:0 10px 30px rgba(0,0,0,0.6); }
+.hidden{ display:none; }
+#inventoryList{ max-height:360px; overflow:auto; display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+.itemCard{ background:rgba(255,255,255,0.03); padding:6px; border-radius:6px; display:flex; justify-content:space-between; }
+button{ background:var(--accent); border:none; color:#042; padding:8px 10px; border-radius:6px; cursor:pointer; }
+#message{ position:absolute; right:12px; top:12px; background:rgba(0,0,0,0.6); padding:8px; border-radius:6px; z-index:70; }
