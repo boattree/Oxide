@@ -1,6 +1,6 @@
 // src/render.js (patched)
-import * as THREE from 'https://unpkg.com/three@0.152.2/build/three.module.js';
-import { PointerLockControls } from 'https://unpkg.com/three@0.152.2/examples/jsm/controls/PointerLockControls.js';
+import * as THREE from "https://unpkg.com/three@0.152.2/build/three.module.js";
+import { PointerLockControls } from "https://unpkg.com/three@0.152.2/examples/jsm/controls/PointerLockControls.js";
 
 export class Renderer {
   constructor(canvas){
@@ -167,3 +167,4 @@ export function createAnimalMesh(a){
   m.position.set(a.x, a.y, a.z);
   return m;
 }
+
